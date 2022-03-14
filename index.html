@@ -1,0 +1,121 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Otter - The Only Otter Blog You'll ever need</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="generateImage(); generateFact()">
+    <header>
+        <div class="nav__bar--top">
+            <nav>
+                <a href="#">About</a>
+            </nav>
+            <div class="nav__bar--middle">
+                <a href="#">
+                    <img src="img/Logo.png" alt="">
+                </a>
+            </div>
+            <nav>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+        <div class="nav__bar--bottom">
+            <nav>
+                <ul>
+                    <li><a href="#">Facts</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Celebrities</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <div class="sidebar__content sidebar__popular__posts">
+            <h2>Popular Posts:</h2>
+            <ul>
+                <li>Popular post 1</li>
+                <li>Popular post 2</li>
+                <li>Popular post 3</li>
+            </ul>
+        </div>
+        <div class="sidebar__content sidebar__recent__posts">
+            <h2>Recent Posts:</h2>
+            <ul>
+                <li>recent post 1</li>
+                <li>recent post 2</li>
+                <li>recent post 3</li>
+            </ul>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <span>&copy <span id="copyright__year"></span> The Daily Otter</span>
+        </footer>
+    </aside>
+    
+    <main>
+        <article class="fact__of__the__day">
+            <h2 class="article--h2">Random Otter Fact:</h2>
+            <div id="fact__of__the__day--fact"></div>
+        </article>
+        <div class="main__content">
+            <article class="posts">
+                <h2 class="article--h2">Up to Date Otter News:</h2>
+                <section class="post">
+                    <h3>The other day I saw otters at a zoo</h3>
+                    <p>
+                        Granted, I didn't actually go to the zoo, neither did I see the otters myself.
+                        One of my friends was nice enough to share the pictures they took at the zoo, though.
+                        You can check them out in the gallery.
+                    </p>
+                </section>
+                <section class="post">
+                    <h3>Man attacked by 20 otters, bitten 26 times: 'I thought I was going to die'</h3>
+                    <p>
+                        A Singapore resident was hospitalized after a bizarre animal attack last month in 
+                        which he was accosted by a gang of otters, who reportedly bit him 26 times.
+                        <br>
+                        <br>
+                        Spencer, who is in his 60s, was reportedly approaching 
+                        the visitors center when he spotted around 20 otters crossing a dimly-lit path in 
+                        front of him. He claimed it was the first time he had seen the mustelids in the area 
+                        despite taking his morning walks there for five months. The animal encounter went 
+                        south after a jogger ran through the pack, causing the fish-eaters to go 
+                        “crazy like dogs” and try to bite the passerby, the shocked senior told Singapore's 
+                        Today online newspaper.
+                        <br>
+                        <br>
+                        Now I know why it's suggested stay at least 5 kayak lengths away form any wild otter
+                        you encounter.
+                    </p>
+                </section>
+                <section class="post">
+                    <h3>Toxic 'forever chemicals' found in otters across England and Wales</h3>
+                    <p>
+                        A group of synthetic substances known as "forever chemicals" because of their environmental 
+                        persistence have been found in otters across England and Wales. This suggests 
+                        "widespread pollution" of British freshwaters today. This is likely due to wastewater
+                        treatment works or use of sewage sludge in farming.
+                        <br>
+                        <br>
+                        Another great example of humans having a negative impact on the environment. Perhaps it's
+                        time to spread some awareness.
+                    </p>
+                </section>
+            </article>
+            <article class="gallery__preview">
+                <h2 class="article--h2">Gallery Preview:</h2>
+                <div id="gallery__preview--img1" class="gallery__preview--img"></div>
+                <div id="gallery__preview--img2" class="gallery__preview--img"></div>
+            </article>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
