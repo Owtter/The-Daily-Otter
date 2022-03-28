@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+*,
+*:before,
+*:after{
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style:none;
+}
+
+a, a:visited{
+    font-style:italic;
+    text-decoration:none;
+    color:#000;
+}
+
+a:hover{
+    font-size:22px;
+}
+
+.border{
+    border:solid 2px #3e3e3e;
+    border-radius: 20px;
+}
+
+/* -------------- 
+    Header start  
+   -------------- */
+
+   header{
+    padding:0.5em 0 0 250px;
+    box-shadow:4px 3px 8px 1px grey;
+    font-size:20px;
+    background-color:#d8efee;
+    height:8.2em;
+}
+
+.nav__bar--top{
+    display:flex;
+    justify-content:space-around;
+    height:6em;
+    width:50%;
+    margin:auto;
+}
+
+.nav__bar--middle{
+    padding:0 1em;
+}
+
+.nav__bar--middle img{
+    width:380px;
+    height:auto;
+    padding:1em 0 0.5em 0;
+}
+
+.nav__bar--bottom{
+    display:flex;
+    justify-content:center;
+}
+
+.nav__bar--bottom ul{
+    display:flex;
+    justify-content:space-around;
+    width:600px;
+    border-top:solid 1px;
+    padding:0.5em 0 0 0;
+}
+/* ------------ 
+    Header end  
+   ------------ */
+
+
+/* --------------- 
+    Sidebar start
+   --------------- */
+.sidebar{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    position:fixed;
+    height:100vh;
+    width:250px;
+    left:0;
+    top:0;
+    background-color:#efd8d9;
+    text-align:center;
+    border-radius:0 20px 20px 0;
+    border-right:solid 2px #3e3e3e;
+}
+
+.sidebar div, footer{
+    height:auto;
+    width:auto;
+}
+
+.sidebar h2{
+    padding:0 0 1em 0;
+}
+
+.sidebar__content li{
+    font-size:20px;
+    padding:1.2em 0;
+}
+/* -------------
+    Sidebar end
+   ------------- */
+
+/* --------- 
+    Gallery 
+   --------- */
+
+.gallery--main{
+    margin:3vh 3vh 0 3vh;
+    padding-left:250px;
+    display:flex;
+    justify-content:space-around;
+}
+/*
+.gallery--main img, video{
+    margin:1vh;
+    width:300px;
+    height:auto;
+}
+
+@media screen and (max-width: 1300px){
+    .gallery--main{
+
+    }
+}*/
+
+.row {
+    display:-ms-flexbox; /* IE10 */
+    display:flex;
+    -ms-flex-wrap:wrap; /* IE10 */
+    flex-wrap:wrap;
+    padding:0 0.5vh;
+}
+  
+/* Create four equal columns that sit next to each other */
+.column {
+-ms-flex:33%; /* IE10 */
+flex:33%;
+max-width:33%;
+padding:0 0.5vh;
+}
+
+.column img, video {
+margin:1vh 0 0 0;
+width:100%;
+height:auto;
+}
+
+/* Responsive - two column-layout instead of four columns */
+@media screen and (max-width:800px) {
+.column {
+    -ms-flex:50%;
+    flex:50%;
+    max-width:50%;
+}
+}
+
+/* Responsive -two columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+.column {
+    -ms-flex:100%;
+    flex:100%;
+    max-width:100%;
+}
+}
