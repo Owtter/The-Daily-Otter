@@ -5,28 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Daily Otter - The Only Otter Blog You'll ever need</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body onload="generateImage(); generateFact()">
     <header>
         <div class="nav__bar--top">
             <nav>
-                <a href="#">About</a>
+                <a href="about.html">About</a>
             </nav>
             <div class="nav__bar--middle">
-                <a href="#">
+                <a href="index.html">
                     <img src="img/Logo.png" alt="">
                 </a>
             </div>
             <nav>
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
         <div class="nav__bar--bottom">
             <nav>
                 <ul>
-                    <li><a href="#">Facts</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Celebrities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="celebrities.html">Celebrities</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,17 +36,17 @@
         <div class="sidebar__content sidebar__popular__posts">
             <h2>Popular Posts:</h2>
             <ul>
-                <li>Popular post 1</li>
-                <li>Popular post 2</li>
-                <li>Popular post 3</li>
+                <li><a href="index.html#section__4">How much is an otter worth?</a></li>
+                <li><a href="index.html#section__5">Police escorts otters Singapore</a></li>
+                <li><a href="index.html#section__2">Man bitten by otters</a></li>
             </ul>
         </div>
         <div class="sidebar__content sidebar__recent__posts">
             <h2>Recent Posts:</h2>
             <ul>
-                <li>recent post 1</li>
-                <li>recent post 2</li>
-                <li>recent post 3</li>
+                <li><a href="index.html#section__1">Zoo visit</a></li>
+                <li><a href="index.html#section__2">Man attacked by 20 otters</a></li>
+                <li><a href="index.html#section__3">Toxic waste concerns</a></li>
             </ul>
         </div>
         <footer>
@@ -60,24 +60,24 @@
     
     <main>
         <article class="fact__of__the__day border">
-            <h2 class="article--h2">Fact of the Day:</h2>
+            <h2 class="article--h2">Fun Fact:</h2>
             <div id="fact__of__the__day--fact"></div>
         </article>
         <div class="main__content">
             <article class="posts border">
                 <h2 class="article--h">Up to Date Otter News:</h2>
-                <section class="post">
+                <section class="post" id="section__1">
                     <h3 class="article--h">The other day I saw otters at a zoo</h3>
-                    <p>
-                        Granted, I didn't actually go to the zoo, neither did I see the otters myself.
+                    <p> Granted, I didn't actually go to the zoo, neither did I see the otters myself.
                         One of my friends was nice enough to share the pictures they took at the zoo, though.
                         You can check them out in the gallery.
                     </p>
                 </section>
-                <section class="post">
-                    <h3 class="article--h">Man attacked by 20 otters, bitten 26 times: 'I thought I was going to die'</h3>
-                    <p>
-                        A Singapore resident was hospitalized after a bizarre animal attack last month in 
+                <section class="post" id="section__2">
+                    <a href="https://nypost.com/2021/12/10/man-attacked-by-gang-of-otters-i-thought-i-was-going-to-die/">
+                        <h3 class="article--h">Man attacked by 20 otters, bitten 26 times: 'I thought I was going to die'</h3>
+                    </a>
+                    <p> A Singapore resident was hospitalized after a bizarre animal attack last month in 
                         which he was accosted by a gang of otters, who reportedly bit him 26 times.
                         <br>
                         <br>
@@ -94,10 +94,11 @@
                         you encounter.
                     </p>
                 </section>
-                <section class="post">
-                    <h3 class="article--h">Toxic 'forever chemicals' found in otters across England and Wales</h3>
-                    <p>
-                        A group of synthetic substances known as "forever chemicals" because of their environmental 
+                <section class="post" id="section__3">
+                    <a href="https://phys.org/news/2022-01-toxic-chemicals-otters-england-wales.html">
+                        <h3 class="article--h">Toxic 'forever chemicals' found in otters across England and Wales</h3>
+                    </a>
+                    <p> A group of synthetic substances known as "forever chemicals" because of their environmental 
                         persistence have been found in otters across England and Wales. This suggests 
                         "widespread pollution" of British freshwaters today. This is likely due to wastewater
                         treatment works or use of sewage sludge in farming.
@@ -107,11 +108,35 @@
                         time to spread some awareness.
                     </p>
                 </section>
+                <section class="post" id="section__4">
+                    <a href="https://www.chicagotribune.com/suburbs/daily-southtown/ct-sta-eisenberg-landmarks-st-0221-20220220-pelfxyg2kbesza5c7yu36yxvly-story.html">
+                        <h3 class="article--h">How much is an otter worth?</h3>
+                    </a>
+                    <p> To answer this existensial question, we of course have to trancsend beyond our regular, every day currency.
+                        <br>
+                        <br>
+                        In 1994, the IDNR (Illinois Department of Natural Resources) began an earnest effort to reintroduce river otters to the state, trading 75 wild turkeys to Kentucky for 50 wild river otters.
+
+                    </p>
+                </section>
+                <section class="post" id="section__5">
+                    <a href="https://www.bbc.com/news/av/world-asia-60720259">
+                        <h3 class="article--h">Otters cross road with police escort in Singapore</h3>
+                    </a>
+                    <p> Why did the otters cross the road? They were outside Singapore's presidential palace.
+                        <br>
+                        <br>
+                        Singaporean officials help otters return to Singapore after they had been driven away by pollution and deforestation over the past decades.
+                    </p>
+                </section>
             </article>
             <article class="gallery__preview border">
                 <h2 class="article--h">Gallery Preview:</h2>
                 <div id="gallery__preview--img1" class="gallery__preview--img"></div>
                 <div id="gallery__preview--img2" class="gallery__preview--img"></div>
+                <div id="gallery__preview--img3" class="gallery__preview--img"></div>
+                <div id="gallery__preview--img4" class="gallery__preview--img"></div>
+                <div id="gallery__preview--img5" class="gallery__preview--img"></div>
             </article>
         </div>
     </main>

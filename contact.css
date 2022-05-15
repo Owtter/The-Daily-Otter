@@ -1,0 +1,26 @@
+main{
+    margin-left:250px;
+    text-align:center;
+}
+
+main h1{
+    margin:3vh;
+}
+
+main ul li{
+    margin-bottom:0.5em;
+}
+
+@media screen and (max-width:950px){
+    .sidebar{
+        display:none;
+    }
+
+    header{
+        padding:0.5em 0 0 0;
+    }
+
+    main{
+        margin-left:0;
+    }
+}

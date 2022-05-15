@@ -1,0 +1,93 @@
+/* ------------
+    Main start
+   ------------ */
+main{
+    /* Display main and child elements next to sidebar */
+    padding-left:250px;
+    display:flex;
+    flex-direction:column;
+    margin-bottom:3vh;
+}
+
+.article--h{
+    display:flex;
+    justify-content:center;
+    font-size:28px;
+}
+
+/* fact of the day in main */
+
+.fact__of__the__day{
+    padding:3vh;
+    margin:3vh 10% 0 10%;
+}
+
+.fact__of__the__day h2, p{
+    display:flex;
+    justify-content:center;
+}
+
+/* main content */
+
+.main__content{
+    margin:3vh 10% 0 10%;
+    display:flex;
+    /* auto adjust spacing at higher resolutions */
+    justify-content:space-between;
+}
+
+.main__content h2{
+    margin-top:3vh;
+}
+
+/* gallery preview */
+.gallery__preview{
+    /* min. space between main__content elements. 
+    Overwritten by {.main__content justify-content:space-between;} 
+    for higher resolutions */
+    margin-left:10%;
+    height:100%;
+    width:50%;
+}
+
+.gallery__preview--img{
+    margin:3vh;
+    padding:1vh;
+}
+
+.gallery__preview img{
+    width:100%;
+    height:auto;
+}
+
+.posts{
+    width:60%;
+    height:100%;
+}
+
+.posts h3{
+    text-align:center;
+    padding:0 0 0.5em 0;
+}
+
+.post{
+    padding:1em;
+    margin:1em;
+}
+/* ----------
+    Main end
+   ---------- */
+
+@media screen and (max-width:950px){
+    .sidebar{
+        display:none;
+    }
+
+    header{
+        padding:0.5em 0 0 0;
+    }
+
+    main{
+        padding:0;
+    }
+}
